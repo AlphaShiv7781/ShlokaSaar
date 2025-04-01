@@ -2,8 +2,8 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-# ✅ Force LiteLLM to read the correct API key (important!)
-os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
+# # ✅ Force LiteLLM to read the correct API key (important!)
+# os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 
 from crewai import Agent
 from langchain_community.chat_models import ChatLiteLLM
